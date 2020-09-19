@@ -1,0 +1,45 @@
+/* Variables */
+
+$colorBorders: black;
+$colorRandomText: whitesmoke;
+
+/* placeholder classes */
+
+%randomText {
+    font-style: italic;
+    margin-top: 20px;
+    color: $colorRandomText;
+}
+
+/* Styles */
+
+section[id^="lorem"] {
+    @extend %randomText;
+
+    h2 {
+        position: relative;
+        bottom: 10px;
+        right: 1px;
+    }
+
+    span {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}
+
+#lorem-1, #lorem-3 {
+    background-color: grey;
+}
+
+#lorem-2 {
+    background-color: #a3a3a3;
+}
+
+table {
+    border: 2px solid $colorBorders;
+}
+
+td, th {
+    border: 1px solid $colorBorders;
+}

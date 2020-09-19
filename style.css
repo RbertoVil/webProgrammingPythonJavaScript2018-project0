@@ -1,0 +1,112 @@
+/* Media queries */
+
+@media (min-width: 880px) {
+    nav {
+        position: fixed;
+        width: 260px;
+    }
+
+    main {
+        position: absolute;
+        left: 280px;
+    }
+        
+    main section {
+        border-left: 2px solid #c8ccd1;
+        border-radius: 0px 15px 15px 15px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto 30%;
+    }
+}
+
+@media (max-width: 879px) {
+    nav, #tableContents {
+        width: 90%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    nav h2 {
+        display: block;
+    }
+
+    nav section, #tableContents {
+        padding-left: 10%
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+/* Styles */
+
+h1, table {
+    text-align: center;
+}
+
+h1::first-letter {
+    font-family: serif;
+    font-size: 1.2em;
+}
+
+nav h2 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-right: 5px;
+}
+
+h2 {
+    display: inline-block;
+    color: white;
+    background-color: #333333;
+    padding-left: 40px;
+}
+
+#tableContents, nav {
+    background-color: whitesmoke;
+    border: 4px double #c8ccd1;
+    border-radius: 15px;
+}
+
+#tableContents li {
+    list-style: none;
+}
+
+p {
+    margin: 25px;
+}
+
+a[href^=https], table > caption {
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table > caption {
+    font-size: 20px;
+}
+
+table img, caption{
+    margin: 5px;
+}
+
+th {
+    background-color: lightgrey;
+}
+
+td, th{
+    padding: 5px;
+}
